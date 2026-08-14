@@ -1,0 +1,14 @@
+{
+  "name": "reposeriff",
+  "version": "1.0.0",
+  "description": "Reposeriff login page",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.1.0"
+  }
+}

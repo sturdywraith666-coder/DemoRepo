@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Reposeriff</title>
+    <meta name="description" content="Sign in to Reposeriff, your favorite chatbox application.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Animated Shapes -->
+    <div class="background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+    
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <i class="fa-solid fa-comments"></i>
+                <h2>Reposeriff</h2>
+            </div>
+            <p class="subtitle">Welcome back! Sign in to continue your conversations.</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" name="email" value="user@example.com" placeholder="Email Address">
+                </div>
+                <div id="emailError" class="inline-error" role="alert" aria-live="polite" style="display: none;">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span id="emailErrorText">Please enter a valid email address.</span>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" name="password" value="password123" placeholder="Password">
+                    <i class="fa-solid fa-eye-slash toggle-password" id="togglePassword"></i>
+                </div>
+                <div id="passwordError" class="inline-error" role="alert" aria-live="polite" style="display: none;">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span id="passwordErrorText">Password is required.</span>
+                </div>
+                
+                <div id="errorMessage" class="error-message" role="alert" aria-live="assertive" style="display: none;">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span id="globalErrorText">Invalid email or password.</span>
+                </div>
+                
+                <div class="options">
+                    <label class="remember-me">
+                        <input type="checkbox" checked>
+                        <span>Remember me</span>
+                    </label>
+                    <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="login-btn" id="loginBtn">
+                    <span>Sign In</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+                <button type="button" class="google-btn" id="googleBtn">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Sign in with Google</span>
+                </button>
+            </form>
+            
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Create one</a></p>
+            </div>
+        </div>
+    </div>
+    <footer class="app-footer">
+        <p>&copy; 2026 Reposeriff. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
