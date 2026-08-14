@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Reposeriff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+    <div class="background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+    
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-comments"></i>
+                <h2>Reposeriff</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+                <a href="messages.html" class="nav-item"><i class="fa-solid fa-message"></i> <span>Messages</span></a>
+                <a href="friends.html" class="nav-item"><i class="fa-solid fa-user-group"></i> <span>Friends</span></a>
+                <a href="settings.html" class="nav-item active"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span></a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Temp+User&background=6366f1&color=fff" alt="User Avatar" class="avatar">
+                    <span>Temp User</span>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <h1 class="welcome-text">Settings</h1>
+                <div class="activity-item" style="flex-direction: column; align-items: flex-start; gap: 20px;">
+                    <h3 style="font-size: 18px;">Profile Settings</h3>
+                    <form style="width: 100%; max-width: 400px; gap: 15px;">
+                        <div class="input-group">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" value="Temp User" placeholder="Display Name">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" value="user@example.com" placeholder="Email Address">
+                        </div>
+                        <button type="button" class="login-btn" style="width: 100%;">Save Changes</button>
+                    </form>
+
+                    <h3 style="font-size: 18px; margin-top: 20px;">Preferences</h3>
+                    <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 400px; padding: 15px; background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 12px;">
+                        <span>Dark Mode</span>
+                        <input type="checkbox" checked style="accent-color: var(--primary); transform: scale(1.2);">
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 400px; padding: 15px; background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 12px;">
+                        <span>Email Notifications</span>
+                        <input type="checkbox" checked style="accent-color: var(--primary); transform: scale(1.2);">
+                    </div>
+                </div>
+                <footer class="app-footer" style="margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+                    <p>&copy; 2026 Reposeriff. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
